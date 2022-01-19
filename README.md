@@ -1,24 +1,21 @@
 # shopify-2022-frontend-challenge
 
-## Project setup
-```
-npm install
-```
+## Method 1
 
-### Compiles and hot-reloads for development
-```
+Run code on host
+
+```bash
+npm i @vue/cli
+npm i
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Go to `localhost:8080` in browser.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Method 2
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+In case you don't have the same environment as I do, I provide a docker-compose file which should run under most system.
+
+Just run `docker-compose up`
+
+Go to `localhost:8080` in browser.

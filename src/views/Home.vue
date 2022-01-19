@@ -2,16 +2,18 @@
   <v-container>
     <v-alert v-if="error" type="error">{{ error }}</v-alert>
     <v-row no-gutters>
-      <v-col class="my-5" cols="3">
-        <v-date-picker v-model="dates" range></v-date-picker>
-        <v-text-field
-          v-model="dateRangeText"
-          label="Date range"
-          prepend-icon="mdi-calendar"
-          readonly
-        ></v-text-field>
+      <v-col class="my-5 sticky" cols="3" lg="3" sm="12" xs="12">
+        <div class="sticky">
+          <v-date-picker class="" full-width v-model="dates" range></v-date-picker>
+          <v-text-field
+            v-model="dateRangeText"
+            label="Date range"
+            prepend-icon="mdi-calendar"
+            readonly
+          ></v-text-field>
+        </div>
       </v-col>
-      <v-col cols="9">
+      <v-col cols="9" lg="9" sm="12" xs="12">
         <div v-if="loading" class="d-flex justify-center">
           <v-progress-circular indeterminate color="primary"></v-progress-circular>
         </div>
@@ -153,3 +155,14 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style>
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+}
+</style>

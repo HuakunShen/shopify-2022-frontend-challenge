@@ -13,9 +13,11 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-avatar href="https://github.com/HuakunShen">
-        <img src="https://avatars.githubusercontent.com/u/33727687?v=4" alt="huakun" />
-      </v-avatar>
+      <v-btn fab href="https://github.com/HuakunShen/shopify-2022-frontend-challenge">
+        <v-avatar>
+          <img src="https://avatars.githubusercontent.com/u/33727687?v=4" alt="huakun" />
+        </v-avatar>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -27,9 +29,5 @@
 <script>
 export default {
   name: 'App',
-
-  data: () => ({
-    //
-  }),
 };
 </script>
